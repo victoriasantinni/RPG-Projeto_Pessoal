@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1772139126878,
+    "nome": "teste2",
+    "classe": "guerreiro",
+    "nivel": 1,
+    "forca": 10,
+    "mana": 0
+  },
+  {
+    "id": 1772139255432,
+    "nome": "teste",
+    "classe": "mago",
+    "nivel": 1,
+    "forca": 0,
+    "mana": 10
+  }
+]

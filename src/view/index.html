@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPG Manager</title>
+    <link rel="stylesheet" href="/src/view/personagem.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to the RPG Project</h1>
+    <div class="main-wrapper">
+    <div class="sidebar-left">
+        <h1>Painel do Mestre</h1>
+        <section>
+            <h2>Cadastrar Herói</h2>
+            <form id="form-personagem">
+                <input type="text" id="nome" placeholder="Nome do Herói" required>
+                <input type="number" id="nivel" placeholder="Nível" min="1" required>
+                <select id="classe" required>
+                    <option value="">Selecione a Classe</option>
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                </select>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+        <h2>Seus Heróis</h2>
+        <div id="personagens-lista"></div>
+    </div>
+
+    <div class="map-view"></div>
+</div>
+    </div>
+    <script src="front.js"></script>
 </body>
 </html>
